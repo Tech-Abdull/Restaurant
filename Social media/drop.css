@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+    body{
+        height: 100vh;
+        background-image: url(/coff\ background.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;background-position: center;
+    }
+    a{
+        transition: .3s;
+    }
+    .container{
+        width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+
+    }
+    ul{
+        list-style: none;
+    }
+    .header{
+        padding: 20px 0;
+        background-color: rgb(54, 54, 54);
+       
+
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    /* logo img styl */
+    .header .main-menu{
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .header .main-menu li a{
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-family: poppins;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .header .main-menu li{
+        position: relative;
+    }
+    .header .main-menu li .sub-menu{
+        position: absolute;
+        width: 180px;
+        background-color: #fff;
+        color: #151515;
+        /* display: none; */
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(240px);
+    }
+    .header .main-menu li .sub-menu a{
+        color: #151515;
+        font-size: 16px;
+        padding: 10px 20px ;
+    }
+    .main-menu li:hover > a{
+        color: orange;
+    }
+    .main-menu li:hover .sub-menu{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }

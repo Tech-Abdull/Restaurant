@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey form Tech-Abdull</h1>
+            <p id="description">Thank you for taking time to help us improve the platform.</p>
+        </header>
+        <form action="" id="survey-form">
+            <!-- text -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="email" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="formControl" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone">Phone number</label>
+                <input type="number" name="Phone" id="Phone" class="formControl" placeholder="Enter your Phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone">Address <span class="clue">(optional)</span> </label>
+                <input type="text" name="Address" id="Address" class="formControl" placeholder="Enter your Address" required>
+            </div>
+            <div class="form-group">
+                <p id="quest">
+                    Which option best describes your current role?
+                </p>
+                <select name="role" id="dropdown" class="formControl" required>
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Job">Job</option>
+                    <option value="Other">Job</option>
+                </select>
+            </div>
+            <div class="form-group"> 
+                <p id="quest">
+                    How you came to know about Tech-Abdull
+                </p>
+                <label for="">
+                    <input type="radio" name="source" value="friends"
+                    class="inputRadio" checked>Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio" >Tv-ads
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Social media"
+                    class="inputRadio" >Social media
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Newspaper"
+                    class="inputRadio" >Newspapers
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio" >Other
+                </label>
+            </div>
+ <div class="form-group">
+    <p id="quest">
+        Would you like to see it improved?
+    </p>
+    <label for="">
+        <input type="checkbox" name="prefer" id="" class="checkbox" value="back-end-dev">Back-end-Developer
+    </label>
+    <label for="">
+        <input type="checkbox" name="prefer" id="" class="checkbox" value="app-dev">Android Developer
+    </label>
+    <label for="">
+        <input type="checkbox" name="prefer" id="" class="checkbox" value="front-end-dev">Front-end-Developer
+    </label>
+    <label for="">
+        <input type="checkbox" name="prefer" id="" class="checkbox" value="soft-eng">Software engeneer
+    </label>
+    <label for="">
+        <input type="checkbox" name="prefer" id="" class="checkbox" value="other">Other
+    </label>
+    
+ </div>
+ <div class="form-group">
+    <p id="quest">
+        Give us your feedback
+    </p>
+    <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter your feedback here"></textarea>
+ </div>
+ <div class="form-group">
+    <button type="submit" id="submit" class="btn">Submit</button>
+ </div>
+        </form>
+    </div>
+    
+</body>
+</html>
